@@ -1,3 +1,3 @@
 //@ts-check
-import eslintBits from '@repo/eslint';
-export default eslintBits('./tsconfig.json');
+import eslintBits from "@repo/eslint";
+export default eslintBits("./tsconfig.json");

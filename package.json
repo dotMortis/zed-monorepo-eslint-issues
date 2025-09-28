@@ -5,6 +5,7 @@
     "scripts": {
         "helper": "tsx bin/some-helper-script.ts",
         "build": "pnpm --filter=\"./packages/*\" build && pnpm --filter=\"./apps/*\" build",
+        "build:prod": "pnpm --filter=\"./packages/*\" build && pnpm --filter server build:prod",
         "lint": "pnpm -r lint",
         "dev:packages": "pnpm --filter=\"./packages/*\" dev",
         "dev:server": "pnpm --filter server dev"
