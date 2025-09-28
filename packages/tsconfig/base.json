@@ -1,0 +1,28 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "repobase",
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "strictPropertyInitialization": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "importHelpers": true,
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "declaration": false,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "pretty": true,
+        "strict": true,
+        "strictNullChecks": true,
+        "target": "ES2024",
+        "module": "NodeNext",
+        "lib": ["ES2024"],
+        "moduleResolution": "nodenext",
+        "noEmitOnError": true
+    },
+    "ts-node": {
+        "esm": true
+    }
+}

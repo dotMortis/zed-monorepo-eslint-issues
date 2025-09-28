@@ -1,0 +1,26 @@
+{
+    "$schema": "https://json.schemastore.org/package.json",
+    "name": "zed-monorepo-eslint-issues",
+    "version": "1.0.0",
+    "scripts": {
+        "helper": "tsx bin/some-helper-script.ts",
+        "build": "pnpm --filter=\"./packages/*\" build && pnpm --filter=\"./apps/*\" build",
+        "lint": "pnpm -r lint",
+        "dev:packages": "pnpm --filter=\"./packages/*\" dev",
+        "dev:server": "pnpm --filter server dev"
+    },
+    "packageManager": "pnpm@10.17.1",
+    "volta": {
+        "node": "24.9.0",
+        "pnpm": "10.17.1"
+    },
+    "devDependencies": {
+        "@repo/eslint": "workspace:*",
+        "@repo/tsconfig": "workspace:*",
+        "@types/node": "^24.5.2",
+        "eslint": "^9.36.0",
+        "prettier": "^3.6.2",
+        "tsx": "^4.20.6",
+        "typescript": "^5.9.2"
+    }
+}

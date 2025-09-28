@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@repo/b",
+  "type": "module",
+  "scripts": {
+    "prebuild": "rm -rf ./dist",
+    "build": "tsc -p ./tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch --incremental",
+    "lint": "eslint --fix"
+  },
+  "devDependencies": {
+    "@repo/eslint": "workspace:*",
+    "@repo/tsconfig": "workspace:*"
+  },
+  "exports": {
+    "./package,json": "./package.json",
+    ".": {
+      "import": "./dist/b.js",
+      "types": "./src/b.ts"
+    }
+  },
+  "files": [
+    "package.json",
+    "dist"
+  ]
+}
