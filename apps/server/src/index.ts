@@ -6,6 +6,7 @@ function debugServer(): void {
       // should warn -> Unexpected console statement. (eslint no-console)
       // should have double quotes
       console.log("hello from server");
+      // schould error no floating promises
       DebugA();
       DebugB();
 }
