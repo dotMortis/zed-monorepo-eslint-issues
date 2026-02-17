@@ -3,15 +3,15 @@
     "author": "Braun IT Solutions",
     "type": "module",
     "dependencies": {
-        "@eslint/js": "^9.30.1",
-        "eslint": "^9.30.1",
-        "eslint-config-prettier": "^10.1.5",
-        "eslint-plugin-prettier": "^5.5.1",
-        "globals": "^16.3.0",
-        "typescript-eslint": "^8.35.1"
+        "@eslint/js": "^10.0.1",
+        "eslint": "^10.0.0",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.5",
+        "globals": "^17.3.0",
+        "typescript-eslint": "^8.56.0"
     },
     "devDependencies": {
-        "@typescript-eslint/utils": "^8.44.1"
+        "@typescript-eslint/utils": "^8.56.0"
     },
     "exports": {
         "./package.json": "./package.json",
